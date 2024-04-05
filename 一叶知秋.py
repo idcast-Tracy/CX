@@ -10,7 +10,7 @@ import plotly.express as px
 import os
 import time
 import datetime
-os.chdir(r'C:\Users\Tracy\Desktop\2024Winter\科研\01.20Python-oneleaf') # 设定文件路径
+# os.chdir(r'C:\Users\Tracy\Desktop\2024Winter\科研\01.20Python-oneleaf') # 设定文件路径
 # 设置页面配置
 st.set_page_config(page_title="CX-copilot 1.0", page_icon="⭐", layout="wide")
 # 通过 css样式隐藏主菜单和页脚
