@@ -24,7 +24,7 @@ st.markdown(hide_menu,unsafe_allow_html=True)
 
 
 with st.sidebar:
-    choose = option_menu("管理系统", ["数据上传", "用户行为数据", "系统性能评估",
+    choose = option_menu("管理端", ["数据上传", "用户行为数据", "系统性能评估",
                                     "数据备份", "安全审计", "系统监控",
                                     "AI启动项", "跨平台同步学习模块"],
                          icons=['cloud-upload', 'person lines fill', 'app-indicator', "boombox-fill",
