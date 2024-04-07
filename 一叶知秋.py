@@ -11,6 +11,7 @@ import os
 import time
 import datetime
 import base64
+import matplotlib.pyplot as plt
 # os.chdir(r'C:\Users\Tracy\Desktop\2024Winter\科研\01.20Python-oneleaf') # 设定文件路径
 # 设置页面配置
 st.set_page_config(page_title="CX-copilot 1.0", page_icon="⭐", layout="wide")
@@ -139,7 +140,7 @@ elif choose == "系统性能评估":
 
     elif selecte2 == "问答系统性能评估曲线":
         st.info('智能问答系统性能检测：确保高效、准确的问答体验。让学习更便捷！')
-                hours = np.arange(0, 24)
+        hours = np.arange(0, 24)
         accuracy = np.random.uniform(0.85, 0.95, size=24)
         recall = np.random.uniform(0.85, 0.95, size=24)
         f1_score = np.random.uniform(0.85, 0.95, size=24)
