@@ -47,7 +47,7 @@ if choose == "数据上传":
         latest_iteration = st.empty() ##  显示进度
         bar = st.progress(0)
         for i in range(100): # Update the progress bar with each iteration.
-            latest_iteration.text(f'Iteration {i + 1}')
+            latest_iteration.text(f'加载进度条 {i + 1} %')
             bar.progress(i + 1)
             time.sleep(0)
         st.success('数据导入成功！请检查并核对数据的完整性和真实性。')
