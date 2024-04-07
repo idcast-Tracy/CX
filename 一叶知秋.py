@@ -58,7 +58,7 @@ if choose == "数据上传":
 elif choose == "用户行为数据":
     latest_iteration = st.empty()  ##  显示进度
     bar = st.progress(0)
-    for i in range(60,100):  # Update the progress bar with each iteration.
+    for i in range(50,100):  # Update the progress bar with each iteration.
         latest_iteration.text(f'Iteration {i + 1}')
         bar.progress(i + 1)
         time.sleep(0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001)
@@ -87,7 +87,7 @@ elif choose == "用户行为数据":
 elif choose == "系统性能评估":
     latest_iteration = st.empty()  ##  显示进度
     bar = st.progress(0)
-    for i in range(60,100):  # Update the progress bar with each iteration.
+    for i in range(50,100):  # Update the progress bar with each iteration.
         latest_iteration.text(f'Iteration {i + 1}')
         bar.progress(i + 1)
         time.sleep(0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001)
@@ -140,7 +140,7 @@ if choose == "数据备份":
 if choose == "安全审计":
     latest_iteration = st.empty()  ##  显示进度
     bar = st.progress(0)
-    for i in range(60,100):  # Update the progress bar with each iteration.
+    for i in range(50,100):  # Update the progress bar with each iteration.
         latest_iteration.text(f'Iteration {i + 1}')
         bar.progress(i + 1)
         time.sleep(0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001)
@@ -163,7 +163,7 @@ if choose == "安全审计":
 if choose == "系统监控":
     latest_iteration = st.empty()  ##  显示进度
     bar = st.progress(0)
-    for i in range(60,100):  # Update the progress bar with each iteration.
+    for i in range(50,100):  # Update the progress bar with each iteration.
         latest_iteration.text(f'Iteration {i + 1}')
         bar.progress(i + 1)
         time.sleep(0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001)
