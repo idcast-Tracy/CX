@@ -60,23 +60,21 @@ if choose == "数据上传":
     for uploaded_file in uploaded_files:
         df = pd.read_csv(uploaded_file,encoding='gbk')
         st.write("文件名:", uploaded_file.name)
-        latest_iteration1 = st.empty() ##  显示进度
-        bar1 = st.progress(0)
-        for i in range(100): # Update the progress bar with each iteration.
-            latest_iteration1.text(f'加载进度 {i + 1} %')
-            bar1.progress(i + 1)
-            time.sleep(0)
-        st.success('数据导入成功！请检查并核对数据的完整性和真实性。')
+        # latest_iteration1 = st.empty() ##  显示进度
+        # bar1 = st.progress(0)
+        # for i in range(100): # Update the progress bar with each iteration.
+        #     latest_iteration1.text(f'加载进度 {i + 1} %')
+        #     bar1.progress(i + 1)
+        #     time.sleep(0)
+        # st.success('数据导入成功！请检查并核对数据的完整性和真实性。')
+        with st.spinner('超星小助手正在努力加载中......'):
+            time.sleep(1)
         st.dataframe(df)
 
 elif choose == "用户行为数据":
-    latest_iteration2 = st.empty()  ##  显示进度
-    bar2 = st.progress(0)
-    for i in range(0,100):  # Update the progress bar with each iteration.
-        latest_iteration2.text(f'加载进度 {i + 1} %')
-        bar2.progress(i + 1)
-        time.sleep(0.01)
-    selecte1 = option_menu(None, ["用户分布地区-条形图", "用户特征分布-饼图", "用户活跃度-折线图"],
+    with st.spinner('超星小助手正在努力加载中......'):
+        time.sleep(0.3)
+    selecte1 = option_menu(None, ["用户地区分布-条形图", "用户特征分布-饼图", "用户活跃度-折线图"],
                           icons=["bar-chart-fill", "pie-chart-fill", "graph-up"],
                           menu_icon="cast", default_index=0, orientation="horizontal",
                            styles={
@@ -85,7 +83,7 @@ elif choose == "用户行为数据":
                                "nav-link": {"font-size": "15px", "text-align": "left", "margin": "0px", "--hover-color": "#f1f1f2"},  # 图标旁文字大小和点击时颜色设定
                                "nav-link-selected": {"background-color": "#4FC8DD"}}
                            )
-    if selecte1 == "用户分布地区-条形图":
+    if selecte1 == "用户地区分布-条形图":
         st.info('条形图直观地展示了用户在不同地区的分布情况，使得数据的对比一目了然。通过不同条形的长度，可以迅速识别出用户的主要聚集地和相对较少的地区，有助于企业制定针对性的市场策略。')
         st.image("用户分布地区.png",width=400)
 
@@ -99,12 +97,8 @@ elif choose == "用户行为数据":
 
 
 elif choose == "系统性能评估":
-    latest_iteration3 = st.empty()  ##  显示进度
-    bar3 = st.progress(0)
-    for i in range(0,100):  # Update the progress bar with each iteration.
-        latest_iteration3.text(f'加载进度 {i + 1} %')
-        bar3.progress(i + 1)
-        time.sleep(0.01)
+    with st.spinner('超星小助手正在努力加载中......'):
+        time.sleep(0.3)
     selecte2 = option_menu(None, ["推荐效果评估","问答系统性能评估曲线"],icons=["pie-chart-fill","graph-up"],
                           menu_icon="cast", default_index=0, orientation="horizontal",
                            styles={
@@ -124,6 +118,8 @@ elif choose == "系统性能评估":
 
 ## ==================================  数据安全与运维保障服务  ==========================================
 if choose == "数据备份":
+    with st.spinner('超星小助手正在努力加载中......'):
+        time.sleep(0.3)
     selecte3 = option_menu(None, ["配置选项", "高级选项", "更新备份数据"],icons=["bar-chart-fill", "pie-chart-fill", "graph-up"],
                           menu_icon="cast", default_index=0, orientation="horizontal",
                            styles={
@@ -152,12 +148,8 @@ if choose == "数据备份":
         df
 
 if choose == "安全审计":
-    latest_iteration4 = st.empty()  ##  显示进度
-    bar4 = st.progress(0)
-    for i in range(0,100):  # Update the progress bar with each iteration.
-        latest_iteration4.text(f'加载进度 {i + 1} %')
-        bar4.progress(i + 1)
-        time.sleep(0.01)
+    with st.spinner('超星小助手正在努力加载中......'):
+        time.sleep(0.3)
     selecte4 = option_menu(None, ["审计日志表","审计日志详细界面"],icons=["pie-chart-fill","graph-up"],
                           menu_icon="cast", default_index=0, orientation="horizontal",
                            styles={
@@ -175,12 +167,8 @@ if choose == "安全审计":
         st.image("安全审计2.png",use_column_width=True)
 
 if choose == "系统监控":
-    latest_iteration5 = st.empty()  ##  显示进度
-    bar5 = st.progress(0)
-    for i in range(0,100):  # Update the progress bar with each iteration.
-        latest_iteration5.text(f'加载进度 {i + 1} %')
-        bar5.progress(i + 1)
-        time.sleep(0.01)
+    with st.spinner('超星小助手正在努力加载中......'):
+        time.sleep(0.3)
     selecte5 = option_menu(None, ["安全监控","服务监控","日志监控","性能监控"],icons=["pie-chart-fill","graph-up"],
                           menu_icon="cast", default_index=0, orientation="horizontal",
                            styles={
@@ -205,18 +193,20 @@ if choose == "系统监控":
 
 ## ==================================  AI启动项  ==========================================
 if choose == "AI启动项":
+    with st.spinner('超星小助手正在努力加载中......'):
+        time.sleep(0.3)
     genre = st.radio("请选择AI启动项类型？", ('创造力型', '平衡型', '保守型'))
     if genre == '创造力型':
         st.success('创造力型AI启动项强调创新和新颖性。这种启动项在构建实时推荐和智能问答系统时，注重生成独特且富有创意的内容。它可能通过深度学习和复杂的算法，从大量数据中挖掘出新颖的模式和关联，从而为用户提供与众不同的推荐或回答。这种启动项非常适合那些需要激发用户兴趣、提供个性化体验或推动创新的场景。')
-        if st.button('点击确认'):
+        if st.button('确认'):
             st.subheader("**:blue[成功调整！系统已自动配置创造力模式]**")
     elif genre == '平衡型':
         st.info("平衡型AI启动项追求稳定性和可靠性的平衡。在构建实时推荐和智能问答系统时，它致力于在准确性和多样性之间找到最佳平衡点。这种启动项可能通过优化算法和模型，确保推荐和回答既符合用户需求，又具有足够的多样性，避免重复或过于单一的内容。平衡型AI启动项适用于那些需要稳定输出、满足广泛用户需求的场景。")
-        if st.button('点击确认'):
+        if st.button('确认'):
             st.subheader("**:blue[成功调整！系统已自动配置平衡模式]**")
     elif genre == '保守型':
         st.warning("保守型AI启动项注重稳定性和风险控制。在构建实时推荐和智能问答系统时，它倾向于采用已经验证过的、成熟的技术和策略，以确保系统的稳定性和可靠性。这种启动项可能不太会尝试新的、未经验证的方法，而是更注重对现有功能的优化和完善。保守型AI启动项适用于那些对系统稳定性和安全性要求极高，或者对风险承受能力有限的场景。")
-        if st.button('点击确认'):
+        if st.button('确认'):
             st.subheader("**:blue[成功调整！系统已自动配置保守模式]**")
 
 
