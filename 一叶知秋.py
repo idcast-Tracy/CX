@@ -82,7 +82,7 @@ with st.sidebar:
 #             time.sleep(1)
 #         st.dataframe(df)
 
-elif choose == "用户行为数据":
+if choose == "用户行为数据":
     with st.spinner('超星小助手正在努力加载中......'):
         time.sleep(2)
     selecte1 = option_menu(None, ["用户地区分布-条形图", "用户特征分布-饼图", "用户活跃度-折线图"],
