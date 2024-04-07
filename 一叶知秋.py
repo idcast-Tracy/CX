@@ -59,7 +59,7 @@ elif choose == "用户行为数据":
     for i in range(0,100):  # Update the progress bar with each iteration.
         latest_iteration.text(f'Iteration {i + 1}')
         bar.progress(i + 1)
-        time.sleep(0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001)
+        time.sleep(0.00000000000000000000000000000000000000000000001)
     selecte1 = option_menu(None, ["用户分布地区-条形图", "用户特征分布-饼图", "用户活跃度-折线图"],
                           icons=["bar-chart-fill", "pie-chart-fill", "graph-up"],
                           menu_icon="cast", default_index=0, orientation="horizontal",
@@ -88,7 +88,7 @@ elif choose == "系统性能评估":
     for i in range(0,100):  # Update the progress bar with each iteration.
         latest_iteration.text(f'Iteration {i + 1}')
         bar.progress(i + 1)
-        time.sleep(0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001)
+        time.sleep(0.00000000000000000000000000000000000000000000001)
     selecte2 = option_menu(None, ["推荐效果评估","问答系统性能评估曲线"],icons=["pie-chart-fill","graph-up"],
                           menu_icon="cast", default_index=0, orientation="horizontal",
                            styles={
@@ -141,7 +141,7 @@ if choose == "安全审计":
     for i in range(0,100):  # Update the progress bar with each iteration.
         latest_iteration.text(f'Iteration {i + 1}')
         bar.progress(i + 1)
-        time.sleep(0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001)
+        time.sleep(0.00000000000000000000000000000000000000000000001)
     selecte4 = option_menu(None, ["审计日志表","审计日志详细界面"],icons=["pie-chart-fill","graph-up"],
                           menu_icon="cast", default_index=0, orientation="horizontal",
                            styles={
@@ -164,7 +164,7 @@ if choose == "系统监控":
     for i in range(0,100):  # Update the progress bar with each iteration.
         latest_iteration.text(f'Iteration {i + 1}')
         bar.progress(i + 1)
-        time.sleep(0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001)
+        time.sleep(0.00000000000000000000000000000000000000000000001)
     selecte5 = option_menu(None, ["安全监控","服务监控","日志监控","性能监控"],icons=["pie-chart-fill","graph-up"],
                           menu_icon="cast", default_index=0, orientation="horizontal",
                            styles={
@@ -194,7 +194,7 @@ if choose == "AI启动项":
     for i in range(0,100):  # Update the progress bar with each iteration.
         latest_iteration.text(f'Iteration {i + 1}')
         bar.progress(i + 1)
-        time.sleep(0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001)
+        time.sleep(0.00000000000000000000000000000000000000000000001)
     selecte6 = option_menu(None, ["创造力","平衡","保守"],icons=["pie-chart-fill","graph-up","cast"],
                           menu_icon="cast", default_index=0, orientation="horizontal",
                            styles={
@@ -218,7 +218,7 @@ if choose == "跨平台同步学习模块":
     for i in range(0,100):  # Update the progress bar with each iteration.
         latest_iteration.text(f'Iteration {i + 1}')
         bar.progress(i + 1)
-        time.sleep(0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001)
+        time.sleep(0.00000000000000000000000000000000000000000000001)
     selecte7 = option_menu(None, ["手机端","平板端","电脑端"],icons=["pie-chart-fill","graph-up","cast"],
                           menu_icon="cast", default_index=0, orientation="horizontal",
                            styles={
