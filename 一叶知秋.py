@@ -59,7 +59,7 @@ elif choose == "用户行为数据":
     for i in range(0,100):  # Update the progress bar with each iteration.
         latest_iteration.text(f'Iteration {i + 1}')
         bar.progress(i + 1)
-        time.sleep(0.5)
+        time.sleep(0.1)
     selecte1 = option_menu(None, ["用户分布地区-条形图", "用户特征分布-饼图", "用户活跃度-折线图"],
                           icons=["bar-chart-fill", "pie-chart-fill", "graph-up"],
                           menu_icon="cast", default_index=0, orientation="horizontal",
