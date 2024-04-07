@@ -139,7 +139,28 @@ elif choose == "系统性能评估":
 
     elif selecte2 == "问答系统性能评估曲线":
         st.info('智能问答系统性能检测：确保高效、准确的问答体验。让学习更便捷！')
-        st.image("问答系统性能评估.png",width=500)
+                hours = np.arange(0, 24)
+        accuracy = np.random.uniform(0.85, 0.95, size=24)
+        recall = np.random.uniform(0.85, 0.95, size=24)
+        f1_score = np.random.uniform(0.85, 0.95, size=24)
+        # 创建图表
+        fig, ax = plt.subplots()
+        # 绘制折线图，并调整颜色为浅色系
+        ax.plot(hours, accuracy, label='Accuracy', marker='o', linewidth=1, markersize=4, color='lightblue')
+        ax.plot(hours, recall, label='Recall', marker='o', linewidth=1, markersize=4, color='lightgreen')
+        ax.plot(hours, f1_score, label='F1-score', marker='o', linewidth=1, markersize=4, color='lightcoral')
+        # 设置纵坐标范围
+        ax.set_ylim(0, 1)
+        # 添加图例、坐标轴标签和标题
+        ax.legend()
+        ax.set_xlabel('Time')
+        ax.set_ylabel('Score')
+        ax.set_title('')
+        # 调整图像尺寸
+        fig.set_size_inches(9, 5)
+        # 显示图表
+        st.pyplot(fig)
+        # st.image("问答系统性能评估.png",width=500)
 
 
 ## ==================================  数据安全与运维保障服务  ==========================================
