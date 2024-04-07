@@ -10,6 +10,7 @@ import plotly.express as px
 import os
 import time
 import datetime
+import base64
 # os.chdir(r'C:\Users\Tracy\Desktop\2024Winter\科研\01.20Python-oneleaf') # 设定文件路径
 # 设置页面配置
 st.set_page_config(page_title="CX-copilot 1.0", page_icon="⭐", layout="wide")
@@ -21,6 +22,22 @@ footer {visibility:hidden;}
 '''
 st.markdown(hide_menu,unsafe_allow_html=True)
 # st.balloons()
+
+def main_bg(main_bg):
+    main_bg_ext = "back.png"
+    st.markdown(
+        f"""
+         <style>
+         .stApp {{
+             background: url(data:image/{main_bg_ext};base64,{base64.b64encode(open(main_bg, "rb").read()).decode()});
+             background-size: cover
+         }}
+         </style>
+         """,
+        unsafe_allow_html=True
+    )
+# 调用
+main_bg('back.png')
 
 
 with st.sidebar:
@@ -195,6 +212,7 @@ if choose == "AI启动项":
         st.info("平衡型AI启动项追求稳定性和可靠性的平衡。在构建实时推荐和智能问答系统时，它致力于在准确性和多样性之间找到最佳平衡点。这种启动项可能通过优化算法和模型，确保推荐和回答既符合用户需求，又具有足够的多样性，避免重复或过于单一的内容。平衡型AI启动项适用于那些需要稳定输出、满足广泛用户需求的场景。")
     elif genre == '保守型':
         st.warning("保守型AI启动项注重稳定性和风险控制。在构建实时推荐和智能问答系统时，它倾向于采用已经验证过的、成熟的技术和策略，以确保系统的稳定性和可靠性。这种启动项可能不太会尝试新的、未经验证的方法，而是更注重对现有功能的优化和完善。保守型AI启动项适用于那些对系统稳定性和安全性要求极高，或者对风险承受能力有限的场景。")
+
 
 
 
