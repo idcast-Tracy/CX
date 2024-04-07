@@ -25,10 +25,9 @@ st.markdown(hide_menu,unsafe_allow_html=True)
 
 with st.sidebar:
     choose = option_menu("管理端", ["数据上传", "用户行为数据", "系统性能评估",
-                                    "数据备份", "安全审计", "系统监控",
-                                    "AI启动项", "跨平台同步学习模块"],
+                                    "数据备份", "安全审计", "系统监控","AI启动项"],
                          icons=['cloud-upload', 'person lines fill', 'app-indicator', "boombox-fill",
-                                'list-task', 'gear', 'bar-chart', 'file-slides'],
+                                'list-task', 'gear', 'bar-chart'],
                          menu_icon="list", default_index=0,
                          styles={
         "container": {"padding": "5!important", "background-color": "#dceef8"}, # 整体颜色
@@ -197,9 +196,5 @@ if choose == "AI启动项":
     elif genre == '保守型':
         st.warning("保守型AI启动项注重稳定性和风险控制。在构建实时推荐和智能问答系统时，它倾向于采用已经验证过的、成熟的技术和策略，以确保系统的稳定性和可靠性。这种启动项可能不太会尝试新的、未经验证的方法，而是更注重对现有功能的优化和完善。保守型AI启动项适用于那些对系统稳定性和安全性要求极高，或者对风险承受能力有限的场景。")
 
-
-## ==================================  跨平台同步学习模块  ==========================================
-if choose == "跨平台同步学习模块":
-    st.write('傻逼')
 
 
