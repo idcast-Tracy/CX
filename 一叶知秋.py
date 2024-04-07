@@ -195,7 +195,7 @@ if choose == "AI启动项":
         latest_iteration.text(f'Iteration {i + 1}')
         bar.progress(i + 1)
         time.sleep(0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001)
-    selecte6 = option_menu(None, ["创造力","平衡","保守"],icons=["pie-chart-fill","graph-up","graph-up"],
+    selecte6 = option_menu(None, ["创造力","平衡","保守"],icons=["pie-chart-fill","graph-up","cast"],
                           menu_icon="cast", default_index=0, orientation="horizontal",
                            styles={
                                "container": {"padding": "5!important", "background-color": "#dceef8"},  # 整体颜色
@@ -219,7 +219,7 @@ if choose == "跨平台同步学习模块":
         latest_iteration.text(f'Iteration {i + 1}')
         bar.progress(i + 1)
         time.sleep(0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001)
-    selecte7 = option_menu(None, ["手机端","平板端","电脑端"],icons=["pie-chart-fill","graph-up","graph-up"],
+    selecte7 = option_menu(None, ["手机端","平板端","电脑端"],icons=["pie-chart-fill","graph-up","cast"],
                           menu_icon="cast", default_index=0, orientation="horizontal",
                            styles={
                                "container": {"padding": "5!important", "background-color": "#dceef8"},  # 整体颜色
