@@ -65,8 +65,8 @@ elif choose == "用户行为数据":
                           menu_icon="cast", default_index=0, orientation="horizontal",
                            styles={
                                "container": {"padding": "5!important", "background-color": "#dceef8"},  # 整体颜色
-                               "icon": {"color": "#0e427a", "font-size": "25px"},  # 图标颜色和大小设定
-                               "nav-link": {"font-size": "25px", "text-align": "left", "margin": "0px", "--hover-color": "#f1f1f2"},  # 图标旁文字大小和点击时颜色设定
+                               "icon": {"color": "#0e427a", "font-size": "15px"},  # 图标颜色和大小设定
+                               "nav-link": {"font-size": "15px", "text-align": "left", "margin": "0px", "--hover-color": "#f1f1f2"},  # 图标旁文字大小和点击时颜色设定
                                "nav-link-selected": {"background-color": "#4FC8DD"}}
                            )
     if selecte1 == "用户分布地区-条形图":
@@ -93,8 +93,8 @@ elif choose == "系统性能评估":
                           menu_icon="cast", default_index=0, orientation="horizontal",
                            styles={
                                "container": {"padding": "5!important", "background-color": "#dceef8"},  # 整体颜色
-                               "icon": {"color": "#0e427a", "font-size": "25px"},  # 图标颜色和大小设定
-                               "nav-link": {"font-size": "25px", "text-align": "left", "margin": "0px", "--hover-color": "#f1f1f2"},  # 图标旁文字大小和点击时颜色设定
+                               "icon": {"color": "#0e427a", "font-size": "15px"},  # 图标颜色和大小设定
+                               "nav-link": {"font-size": "15px", "text-align": "left", "margin": "0px", "--hover-color": "#f1f1f2"},  # 图标旁文字大小和点击时颜色设定
                                "nav-link-selected": {"background-color": "#4FC8DD"}}
                           )
     if selecte2 == "推荐效果评估":
@@ -112,8 +112,8 @@ if choose == "数据备份":
                           menu_icon="cast", default_index=0, orientation="horizontal",
                            styles={
                                "container": {"padding": "5!important", "background-color": "#dceef8"},  # 整体颜色
-                               "icon": {"color": "#0e427a", "font-size": "25px"},  # 图标颜色和大小设定
-                               "nav-link": {"font-size": "25px", "text-align": "left", "margin": "0px", "--hover-color": "#f1f1f2"},  # 图标旁文字大小和点击时颜色设定
+                               "icon": {"color": "#0e427a", "font-size": "15px"},  # 图标颜色和大小设定
+                               "nav-link": {"font-size": "15px", "text-align": "left", "margin": "0px", "--hover-color": "#f1f1f2"},  # 图标旁文字大小和点击时颜色设定
                                "nav-link-selected": {"background-color": "#4FC8DD"}}
                           )
     if selecte3 == "配置选项":
@@ -146,8 +146,8 @@ if choose == "安全审计":
                           menu_icon="cast", default_index=0, orientation="horizontal",
                            styles={
                                "container": {"padding": "5!important", "background-color": "#dceef8"},  # 整体颜色
-                               "icon": {"color": "#0e427a", "font-size": "25px"},  # 图标颜色和大小设定
-                               "nav-link": {"font-size": "25px", "text-align": "left", "margin": "0px", "--hover-color": "#f1f1f2"},  # 图标旁文字大小和点击时颜色设定
+                               "icon": {"color": "#0e427a", "font-size": "15px"},  # 图标颜色和大小设定
+                               "nav-link": {"font-size": "15px", "text-align": "left", "margin": "0px", "--hover-color": "#f1f1f2"},  # 图标旁文字大小和点击时颜色设定
                                "nav-link-selected": {"background-color": "#4FC8DD"}}
                           )
     if selecte4 == "审计日志表":
@@ -169,8 +169,8 @@ if choose == "系统监控":
                           menu_icon="cast", default_index=0, orientation="horizontal",
                            styles={
                                "container": {"padding": "5!important", "background-color": "#dceef8"},  # 整体颜色
-                               "icon": {"color": "#0e427a", "font-size": "25px"},  # 图标颜色和大小设定
-                               "nav-link": {"font-size": "25px", "text-align": "left", "margin": "0px", "--hover-color": "#f1f1f2"},  # 图标旁文字大小和点击时颜色设定
+                               "icon": {"color": "#0e427a", "font-size": "15px"},  # 图标颜色和大小设定
+                               "nav-link": {"font-size": "15px", "text-align": "left", "margin": "0px", "--hover-color": "#f1f1f2"},  # 图标旁文字大小和点击时颜色设定
                                "nav-link-selected": {"background-color": "#4FC8DD"}}
                           )
     if selecte5 == "安全监控":
@@ -199,8 +199,8 @@ if choose == "AI启动项":
                           menu_icon="cast", default_index=0, orientation="horizontal",
                            styles={
                                "container": {"padding": "5!important", "background-color": "#dceef8"},  # 整体颜色
-                               "icon": {"color": "#0e427a", "font-size": "25px"},  # 图标颜色和大小设定
-                               "nav-link": {"font-size": "25px", "text-align": "left", "margin": "0px", "--hover-color": "#f1f1f2"},  # 图标旁文字大小和点击时颜色设定
+                               "icon": {"color": "#0e427a", "font-size": "15px"},  # 图标颜色和大小设定
+                               "nav-link": {"font-size": "15px", "text-align": "left", "margin": "0px", "--hover-color": "#f1f1f2"},  # 图标旁文字大小和点击时颜色设定
                                "nav-link-selected": {"background-color": "#4FC8DD"}}
                           )
     if selecte6 == "创造力":
@@ -223,8 +223,8 @@ if choose == "跨平台同步学习模块":
                           menu_icon="cast", default_index=0, orientation="horizontal",
                            styles={
                                "container": {"padding": "5!important", "background-color": "#dceef8"},  # 整体颜色
-                               "icon": {"color": "#0e427a", "font-size": "25px"},  # 图标颜色和大小设定
-                               "nav-link": {"font-size": "25px", "text-align": "left", "margin": "0px", "--hover-color": "#f1f1f2"},  # 图标旁文字大小和点击时颜色设定
+                               "icon": {"color": "#0e427a", "font-size": "15px"},  # 图标颜色和大小设定
+                               "nav-link": {"font-size": "15px", "text-align": "left", "margin": "0px", "--hover-color": "#f1f1f2"},  # 图标旁文字大小和点击时颜色设定
                                "nav-link-selected": {"background-color": "#4FC8DD"}}
                           )
     if selecte7 == "手机端":
