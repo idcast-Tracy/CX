@@ -41,35 +41,46 @@ main_bg('back.png')
 
 
 with st.sidebar:
-    choose = option_menu("管理端", ["数据上传", "用户行为数据", "系统性能评估",
-                                    "数据备份", "安全审计", "系统监控","AI启动项"],
-                         icons=['cloud-upload', 'person lines fill', 'app-indicator', "boombox-fill",
-                                'list-task', 'gear', 'bar-chart'],
-                         menu_icon="list", default_index=0,
-                         styles={
-        "container": {"padding": "5!important", "background-color": "#dceef8"}, # 整体颜色
-        "icon": {"color": "#0e427a", "font-size": "15px"}, # 图标颜色和大小设定
-        "nav-link": {"font-size": "15px", "text-align": "left", "margin":"0px", "--hover-color": "#f1f1f2"}, # 图标旁文字大小和点击时颜色设定
-        "nav-link-selected": {"background-color": "#4FC8DD"} # 点击后背景色
-    })
+    # choose = option_menu("管理端", ["数据上传", "用户行为数据", "系统性能评估",
+    #                                 "数据备份", "安全审计", "系统监控","AI启动项"],
+    #                      icons=['cloud-upload', 'person lines fill', 'app-indicator', "boombox-fill",
+    #                             'list-task', 'gear', 'bar-chart'],
+    #                      menu_icon="list", default_index=0,
+    #                      styles={
+    #     "container": {"padding": "5!important", "background-color": "#dceef8"}, # 整体颜色
+    #     "icon": {"color": "#0e427a", "font-size": "15px"}, # 图标颜色和大小设定
+    #     "nav-link": {"font-size": "15px", "text-align": "left", "margin":"0px", "--hover-color": "#f1f1f2"}, # 图标旁文字大小和点击时颜色设定
+    #     "nav-link-selected": {"background-color": "#4FC8DD"} # 点击后背景色
+    # })
+    choose = option_menu("管理端", ["用户行为数据", "系统性能评估",
+                                "数据备份", "安全审计", "系统监控","AI启动项"],
+                     icons=['person lines fill', 'app-indicator', "boombox-fill",
+                            'list-task', 'gear', 'bar-chart'],
+                     menu_icon="list", default_index=0,
+                     styles={
+    "container": {"padding": "5!important", "background-color": "#dceef8"}, # 整体颜色
+    "icon": {"color": "#0e427a", "font-size": "15px"}, # 图标颜色和大小设定
+    "nav-link": {"font-size": "15px", "text-align": "left", "margin":"0px", "--hover-color": "#f1f1f2"}, # 图标旁文字大小和点击时颜色设定
+    "nav-link-selected": {"background-color": "#4FC8DD"} # 点击后背景色
+})
 
 ## ==================================  数据监控与分析  ==========================================
-if choose == "数据上传":
-    ## file_uploader【文件上传】
-    uploaded_files = st.file_uploader("选择需上传的文件(包括试卷库、作业库、题库、PPT课件等)：", accept_multiple_files=True, type=["csv","xlsx","xls","ppt","docx","txt","mp4","mp3","pdf","png","jpg"])
-    for uploaded_file in uploaded_files:
-        df = pd.read_csv(uploaded_file,encoding='gbk')
-        st.write("文件名:", uploaded_file.name)
-        # latest_iteration1 = st.empty() ##  显示进度
-        # bar1 = st.progress(0)
-        # for i in range(100): # Update the progress bar with each iteration.
-        #     latest_iteration1.text(f'加载进度 {i + 1} %')
-        #     bar1.progress(i + 1)
-        #     time.sleep(0)
-        # st.success('数据导入成功！请检查并核对数据的完整性和真实性。')
-        with st.spinner('超星小助手正在努力加载中......'):
-            time.sleep(1)
-        st.dataframe(df)
+# if choose == "数据上传":
+#     ## file_uploader【文件上传】
+#     uploaded_files = st.file_uploader("选择需上传的文件(包括试卷库、作业库、题库、PPT课件等)：", accept_multiple_files=True, type=["csv","xlsx","xls","ppt","docx","txt","mp4","mp3","pdf","png","jpg"])
+#     for uploaded_file in uploaded_files:
+#         df = pd.read_csv(uploaded_file,encoding='gbk')
+#         st.write("文件名:", uploaded_file.name)
+#         # latest_iteration1 = st.empty() ##  显示进度
+#         # bar1 = st.progress(0)
+#         # for i in range(100): # Update the progress bar with each iteration.
+#         #     latest_iteration1.text(f'加载进度 {i + 1} %')
+#         #     bar1.progress(i + 1)
+#         #     time.sleep(0)
+#         # st.success('数据导入成功！请检查并核对数据的完整性和真实性。')
+#         with st.spinner('超星小助手正在努力加载中......'):
+#             time.sleep(1)
+#         st.dataframe(df)
 
 elif choose == "用户行为数据":
     with st.spinner('超星小助手正在努力加载中......'):
