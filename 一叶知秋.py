@@ -26,11 +26,9 @@ st.markdown(hide_menu,unsafe_allow_html=True)
 with st.sidebar:
     choose = option_menu("管理系统", ["数据上传", "用户行为数据", "系统性能评估",
                                     "数据备份", "安全审计", "系统监控",
-                                    "创造力", "平衡", "保守",
-                                    "手机端", "平板端", "电脑端"],
+                                    "AI启动项", "跨平台同步学习模块"],
                          icons=['cloud-upload', 'person lines fill', 'app-indicator', "boombox-fill",
-                                'list-task', 'gear', 'bar-chart', "boombox-fill",
-                                'house', 'file-slides', 'bar-chart', "cast"],
+                                'list-task', 'gear', 'bar-chart', 'file-slides'],
                          menu_icon="list", default_index=0,
                          styles={
         "container": {"padding": "5!important", "background-color": "#dceef8"}, # 整体颜色
@@ -190,34 +188,50 @@ if choose == "系统监控":
 
 
 ## ==================================  AI启动项  ==========================================
-if choose == "创造力":
-    # px.data.tips()`是Plotly Express提供的一个示例数据集，其中包含有关餐厅小费的数据它是一个DataFrame对象
-    data_bar = px.data.tips()
-    fig_bar = px.bar(data_bar, x='day', y='total_bill', color='sex')
-    st.plotly_chart(fig_bar)
-
-elif choose == "平衡":
-    data_pie = px.data.tips()
-    fig_pie = px.pie(data_pie, names='day')
-    st.plotly_chart(fig_pie)
-
-elif choose == "保守":
-    data_line = px.data.gapminder().query("country=='China'")
-    fig_line = px.line(data_line, x='year', y='pop')
-    st.plotly_chart(fig_line)
+if choose == "AI启动项":
+    latest_iteration = st.empty()  ##  显示进度
+    bar = st.progress(0)
+    for i in range(0,100):  # Update the progress bar with each iteration.
+        latest_iteration.text(f'Iteration {i + 1}')
+        bar.progress(i + 1)
+        time.sleep(0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001)
+    selecte6 = option_menu(None, ["创造力","平衡","保守"],icons=["pie-chart-fill","graph-up","graph-up"],
+                          menu_icon="cast", default_index=0, orientation="horizontal",
+                           styles={
+                               "container": {"padding": "5!important", "background-color": "#dceef8"},  # 整体颜色
+                               "icon": {"color": "#0e427a", "font-size": "25px"},  # 图标颜色和大小设定
+                               "nav-link": {"font-size": "25px", "text-align": "left", "margin": "0px", "--hover-color": "#f1f1f2"},  # 图标旁文字大小和点击时颜色设定
+                               "nav-link-selected": {"background-color": "#4FC8DD"}}
+                          )
+    if selecte6 == "创造力":
+        st.info("1")
+    elif selecte6 == "平衡":
+        st.info("2")
+    elif selecte6 == "保守":
+        st.info("3")
 
 
 ## ==================================  跨平台同步学习模块  ==========================================
-if choose == "手机端":
-    st.write("我的梦")
-    st.audio("Dream It Possible.mp3")
-
-elif choose == "平板端":
-    st.write("离别开出花")
-    st.audio("离别开出花.mp3")
-
-elif choose == "电脑端":
-    st.write("明天，你好")
-    st.audio("明天,你好.mp3")
+if choose == "跨平台同步学习模块":
+    latest_iteration = st.empty()  ##  显示进度
+    bar = st.progress(0)
+    for i in range(0,100):  # Update the progress bar with each iteration.
+        latest_iteration.text(f'Iteration {i + 1}')
+        bar.progress(i + 1)
+        time.sleep(0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001)
+    selecte7 = option_menu(None, ["手机端","平板端","电脑端"],icons=["pie-chart-fill","graph-up","graph-up"],
+                          menu_icon="cast", default_index=0, orientation="horizontal",
+                           styles={
+                               "container": {"padding": "5!important", "background-color": "#dceef8"},  # 整体颜色
+                               "icon": {"color": "#0e427a", "font-size": "25px"},  # 图标颜色和大小设定
+                               "nav-link": {"font-size": "25px", "text-align": "left", "margin": "0px", "--hover-color": "#f1f1f2"},  # 图标旁文字大小和点击时颜色设定
+                               "nav-link-selected": {"background-color": "#4FC8DD"}}
+                          )
+    if selecte7 == "手机端":
+        st.info("1")
+    elif selecte7 == "平板端":
+        st.info("2")
+    elif selecte7 == "电脑端":
+        st.info("3")
 
 
