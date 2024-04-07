@@ -24,7 +24,7 @@ st.markdown(hide_menu,unsafe_allow_html=True)
 
 
 with st.sidebar:
-    choose = option_menu("管理层", ["数据上传", "用户行为数据", "系统性能评估",
+    choose = option_menu("管理系统", ["数据上传", "用户行为数据", "系统性能评估",
                                     "数据备份", "安全审计", "系统监控",
                                     "创造力", "平衡", "保守",
                                     "手机端", "平板端", "电脑端"],
