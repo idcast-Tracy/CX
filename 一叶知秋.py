@@ -32,8 +32,8 @@ with st.sidebar:
                          menu_icon="list", default_index=0,
                          styles={
         "container": {"padding": "5!important", "background-color": "#dceef8"}, # 整体颜色
-        "icon": {"color": "#0e427a", "font-size": "25px"}, # 图标颜色和大小设定
-        "nav-link": {"font-size": "25px", "text-align": "left", "margin":"0px", "--hover-color": "#f1f1f2"}, # 图标旁文字大小和点击时颜色设定
+        "icon": {"color": "#0e427a", "font-size": "15px"}, # 图标颜色和大小设定
+        "nav-link": {"font-size": "15px", "text-align": "left", "margin":"0px", "--hover-color": "#f1f1f2"}, # 图标旁文字大小和点击时颜色设定
         "nav-link-selected": {"background-color": "#4FC8DD"} # 点击后背景色
     })
 
