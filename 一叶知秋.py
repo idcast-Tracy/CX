@@ -56,6 +56,12 @@ if choose == "数据上传":
         st.dataframe(df)
 
 elif choose == "用户行为数据":
+    latest_iteration = st.empty()  ##  显示进度
+    bar = st.progress(0)
+    for i in range(80,100):  # Update the progress bar with each iteration.
+        latest_iteration.text(f'Iteration {i + 1}')
+        bar.progress(i + 1)
+        time.sleep(0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001)
     selecte1 = option_menu(None, ["用户分布地区-条形图", "用户特征分布-饼图", "用户活跃度-折线图"],
                           icons=["bar-chart-fill", "pie-chart-fill", "graph-up"],
                           menu_icon="cast", default_index=0, orientation="horizontal",
@@ -66,37 +72,25 @@ elif choose == "用户行为数据":
                                "nav-link-selected": {"background-color": "#4FC8DD"}}
                            )
     if selecte1 == "用户分布地区-条形图":
-        latest_iteration = st.empty()  ##  显示进度
-        bar = st.progress(0)
-        for i in range(100):  # Update the progress bar with each iteration.
-            latest_iteration.text(f'Iteration {i + 1}')
-            bar.progress(i + 1)
-            time.sleep(0)
         st.info('条形图直观地展示了用户在不同地区的分布情况，使得数据的对比一目了然。通过不同条形的长度，可以迅速识别出用户的主要聚集地和相对较少的地区，有助于企业制定针对性的市场策略。')
         st.image("用户分布地区.png",width=400)
 
     elif selecte1 == "用户特征分布-饼图":
-        latest_iteration = st.empty()  ##  显示进度
-        bar = st.progress(0)
-        for i in range(100):  # Update the progress bar with each iteration.
-            latest_iteration.text(f'Iteration {i + 1}')
-            bar.progress(i + 1)
-            time.sleep(0)
         st.info('饼图以圆形为基础，通过划分不同的扇形区域来展示用户特征的分布情况。这种图表形式使得数据的占比关系非常清晰，便于快速了解各类用户特征的比例，为企业的用户分析和精准营销提供有力支持。')
         st.image("用户特征分布.png",width=800)
 
     elif selecte1 == "用户活跃度-折线图":
-        latest_iteration = st.empty()  ##  显示进度
-        bar = st.progress(0)
-        for i in range(100):  # Update the progress bar with each iteration.
-            latest_iteration.text(f'Iteration {i + 1}')
-            bar.progress(i + 1)
-            time.sleep(0)
         st.info('折线图能够清晰地展示用户活跃度随时间的变化趋势，通过连线的起伏可以直观地看出活跃度的增减情况。这种图表形式有助于企业把握用户活跃度的变化规律，从而及时调整运营策略，提升用户留存和活跃度。')
         st.image("用户活跃度.png",width=500)
 
 
 elif choose == "系统性能评估":
+    latest_iteration = st.empty()  ##  显示进度
+    bar = st.progress(0)
+    for i in range(80,100):  # Update the progress bar with each iteration.
+        latest_iteration.text(f'Iteration {i + 1}')
+        bar.progress(i + 1)
+        time.sleep(0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001)
     selecte2 = option_menu(None, ["推荐效果评估","问答系统性能评估曲线"],icons=["pie-chart-fill","graph-up"],
                           menu_icon="cast", default_index=0, orientation="horizontal",
                            styles={
@@ -106,22 +100,10 @@ elif choose == "系统性能评估":
                                "nav-link-selected": {"background-color": "#4FC8DD"}}
                           )
     if selecte2 == "推荐效果评估":
-        latest_iteration = st.empty()  ##  显示进度
-        bar = st.progress(0)
-        for i in range(100):  # Update the progress bar with each iteration.
-            latest_iteration.text(f'Iteration {i + 1}')
-            bar.progress(i + 1)
-            time.sleep(0)
         st.info('一个用于分析和展示系统推荐性能的核心功能，这有助于管理层精准掌握系统性能，为决策提供有力支持，推动系统持续优化发展')
         st.image("推荐效果评估.png",width=600)
 
     elif selecte2 == "问答系统性能评估曲线":
-        latest_iteration = st.empty()  ##  显示进度
-        bar = st.progress(0)
-        for i in range(100):  # Update the progress bar with each iteration.
-            latest_iteration.text(f'Iteration {i + 1}')
-            bar.progress(i + 1)
-            time.sleep(0)
         st.info('智能问答系统性能检测：确保高效、准确的问答体验。让学习更便捷！')
         st.image("问答系统性能评估.png",width=500)
 
@@ -156,6 +138,12 @@ if choose == "数据备份":
         df
 
 if choose == "安全审计":
+    latest_iteration = st.empty()  ##  显示进度
+    bar = st.progress(0)
+    for i in range(80,100):  # Update the progress bar with each iteration.
+        latest_iteration.text(f'Iteration {i + 1}')
+        bar.progress(i + 1)
+        time.sleep(0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001)
     selecte4 = option_menu(None, ["审计日志表","审计日志详细界面"],icons=["pie-chart-fill","graph-up"],
                           menu_icon="cast", default_index=0, orientation="horizontal",
                            styles={
@@ -165,26 +153,20 @@ if choose == "安全审计":
                                "nav-link-selected": {"background-color": "#4FC8DD"}}
                           )
     if selecte4 == "审计日志表":
-        latest_iteration = st.empty()  ##  显示进度
-        bar = st.progress(0)
-        for i in range(100):  # Update the progress bar with each iteration.
-            latest_iteration.text(f'Iteration {i + 1}')
-            bar.progress(i + 1)
-            time.sleep(0)
         st.info("审计日志表以直观、简洁的方式展示了审计数据的统计结果，用户可以迅速了解审计活动的整体情况，如用户的登录次数、登录时间等。这种图表形式有助于用户快速发现异常或风险点，为决策提供有力支持。")
         st.image("安全审计1.png",width=800)
 
     elif selecte4 == "审计日志详细界面":
-        latest_iteration = st.empty()  ##  显示进度
-        bar = st.progress(0)
-        for i in range(100):  # Update the progress bar with each iteration.
-            latest_iteration.text(f'Iteration {i + 1}')
-            bar.progress(i + 1)
-            time.sleep(0)
         st.info("审计日志详细界面提供了审计事件的详细信息，包括事件发生的时间、操作人、操作内容等。这一界面设计使得用户可以深入了解每个审计事件的具体情况，为进一步的调查和分析提供了丰富的数据支持。")
         st.image("安全审计2.png",use_column_width=True)
 
 if choose == "系统监控":
+    latest_iteration = st.empty()  ##  显示进度
+    bar = st.progress(0)
+    for i in range(80,100):  # Update the progress bar with each iteration.
+        latest_iteration.text(f'Iteration {i + 1}')
+        bar.progress(i + 1)
+        time.sleep(0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001)
     selecte5 = option_menu(None, ["安全监控","服务监控","日志监控","性能监控"],icons=["pie-chart-fill","graph-up"],
                           menu_icon="cast", default_index=0, orientation="horizontal",
                            styles={
@@ -194,39 +176,15 @@ if choose == "系统监控":
                                "nav-link-selected": {"background-color": "#4FC8DD"}}
                           )
     if selecte5 == "安全监控":
-        latest_iteration = st.empty()  ##  显示进度
-        bar = st.progress(0)
-        for i in range(100):  # Update the progress bar with each iteration.
-            latest_iteration.text(f'Iteration {i + 1}')
-            bar.progress(i + 1)
-            time.sleep(0)
         st.info("安全监控是保障系统稳定运行的重要环节，通过实时监控网络流量、用户行为等，及时发现并阻止潜在的安全威胁。它能有效预防数据泄露、黑客攻击等风险，确保企业信息安全。")
         st.image("安全监控.png",use_column_width=True)
     elif selecte5 == "服务监控":
-        latest_iteration = st.empty()  ##  显示进度
-        bar = st.progress(0)
-        for i in range(100):  # Update the progress bar with each iteration.
-            latest_iteration.text(f'Iteration {i + 1}')
-            bar.progress(i + 1)
-            time.sleep(0)
         st.info("服务监控是对企业关键业务服务进行持续追踪和管理的过程，确保服务的可用性、稳定性和性能。通过监控，企业可以迅速响应服务中断或性能下降等问题，保障用户体验和业务连续性。")
         st.image("服务监控.png",use_column_width=True)
     elif selecte5 == "日志监控":
-        latest_iteration = st.empty()  ##  显示进度
-        bar = st.progress(0)
-        for i in range(100):  # Update the progress bar with each iteration.
-            latest_iteration.text(f'Iteration {i + 1}')
-            bar.progress(i + 1)
-            time.sleep(0)
         st.info("日志监控是对系统、应用等产生的日志信息进行收集、分析和管理的过程。通过监控日志，企业可以了解系统的运行状况、发现潜在问题，并为故障排查和性能优化提供有力支持。")
         st.image("日志监控.png",use_column_width=True)
     elif selecte5 == "性能监控":
-        latest_iteration = st.empty()  ##  显示进度
-        bar = st.progress(0)
-        for i in range(100):  # Update the progress bar with each iteration.
-            latest_iteration.text(f'Iteration {i + 1}')
-            bar.progress(i + 1)
-            time.sleep(0)
         st.info("性能监控是对系统、应用等性能指标的持续测量和评估。它帮助企业了解系统的运行效率、资源使用情况等，为性能优化和容量规划提供依据。通过性能监控，企业可以确保系统在高负载下仍能保持稳定运行。")
         st.image("性能监控.png",use_column_width=True)
 
