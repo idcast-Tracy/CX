@@ -160,6 +160,8 @@ if choose == "数据备份":
         option3 = st.selectbox("备份频率", ("每小时", "每日", "每周", "每月"))
         txt1 = st.text_area('请手动输入存储位置')
         txt2 = st.text_area('请手动输入备份任务名称')
+        if st.button('确认'):
+            st.subheader("**:blue[系统已更改配置！]**")
     elif selecte3 == "高级选项":
         option4 = st.selectbox("备份压缩", ("启用备份数据压缩","不启用"))
         option5 = st.selectbox("增量备份", ("启用增量备份","不启用"))
