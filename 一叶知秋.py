@@ -56,7 +56,7 @@ with st.sidebar:
 ## ==================================  数据监控与分析  ==========================================
 if choose == "数据上传":
     ## file_uploader【文件上传】
-    uploaded_files = st.file_uploader("选择需上传的文件(包括试卷库、作业库、题库、PPT等)：", accept_multiple_files=True, type=["csv"])
+    uploaded_files = st.file_uploader("选择需上传的文件(包括试卷库、作业库、题库、PPT课件等)：", accept_multiple_files=True, type=["csv","xlsx","xls","ppt","docx","txt","mp4","mp3","pdf","png","jpg"])
     for uploaded_file in uploaded_files:
         df = pd.read_csv(uploaded_file,encoding='gbk')
         st.write("文件名:", uploaded_file.name)
