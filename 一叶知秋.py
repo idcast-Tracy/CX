@@ -85,7 +85,7 @@ with st.sidebar:
 
 if choose == "用户行为数据":
     with st.spinner('超星小助手正在努力加载中......'):
-        time.sleep(2)
+        time.sleep(1)
     selecte1 = option_menu(None, ["用户地区分布-条形图", "用户特征分布-饼图", "用户活跃度-折线图"],
                           icons=["bar-chart-fill", "pie-chart-fill", "graph-up"],
                           menu_icon="cast", default_index=0, orientation="horizontal",
@@ -125,7 +125,7 @@ if choose == "用户行为数据":
 
 elif choose == "系统性能评估":
     with st.spinner('超星小助手正在努力加载中......'):
-        time.sleep(2)
+        time.sleep(1)
     selecte2 = option_menu(None, ["推荐效果评估","问答系统性能评估曲线"],icons=["pie-chart-fill","graph-up"],
                           menu_icon="cast", default_index=0, orientation="horizontal",
                            styles={
@@ -146,7 +146,7 @@ elif choose == "系统性能评估":
 ## ==================================  数据安全与运维保障服务  ==========================================
 if choose == "数据备份":
     with st.spinner('超星小助手正在努力加载中......'):
-        time.sleep(2)
+        time.sleep(1)
     selecte3 = option_menu(None, ["配置选项", "高级选项", "更新备份数据"],icons=["bar-chart-fill", "pie-chart-fill", "graph-up"],
                           menu_icon="cast", default_index=0, orientation="horizontal",
                            styles={
@@ -178,7 +178,7 @@ if choose == "数据备份":
 
 if choose == "安全审计":
     with st.spinner('超星小助手正在努力加载中......'):
-        time.sleep(2)
+        time.sleep(1)
     selecte4 = option_menu(None, ["审计日志表","审计日志详细界面"],icons=["pie-chart-fill","graph-up"],
                           menu_icon="cast", default_index=0, orientation="horizontal",
                            styles={
@@ -197,7 +197,7 @@ if choose == "安全审计":
 
 if choose == "系统监控":
     with st.spinner('超星小助手正在努力加载中......'):
-        time.sleep(2)
+        time.sleep(1)
     selecte5 = option_menu(None, ["安全监控","服务监控","日志监控","性能监控"],icons=["pie-chart-fill","graph-up"],
                           menu_icon="cast", default_index=0, orientation="horizontal",
                            styles={
@@ -223,7 +223,7 @@ if choose == "系统监控":
 ## ==================================  AI启动项  ==========================================
 if choose == "AI启动项":
     with st.spinner('超星小助手正在努力加载中......'):
-        time.sleep(2)
+        time.sleep(1)
     genre = st.radio("请选择AI启动项类型？", ('创造力型', '平衡型', '保守型'))
     if genre == '创造力型':
         st.success('创造力型AI启动项强调创新和新颖性。这种启动项在构建实时推荐和智能问答系统时，注重生成独特且富有创意的内容。它可能通过深度学习和复杂的算法，从大量数据中挖掘出新颖的模式和关联，从而为用户提供与众不同的推荐或回答。这种启动项非常适合那些需要激发用户兴趣、提供个性化体验或推动创新的场景。')
