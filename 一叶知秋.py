@@ -10,7 +10,7 @@ import plotly.express as px
 import os
 import time
 import datetime
-# import base64
+import base64
 # os.chdir(r'C:\Users\Tracy\Desktop\2024Winter\科研\01.20Python-oneleaf') # 设定文件路径
 # 设置页面配置
 st.set_page_config(page_title="CX-copilot 1.0", page_icon="⭐", layout="wide")
@@ -23,21 +23,21 @@ footer {visibility:hidden;}
 st.markdown(hide_menu,unsafe_allow_html=True)
 # st.balloons()
 
-# def main_bg(main_bg):
-#     main_bg_ext = "back.png"
-#     st.markdown(
-#         f"""
-#          <style>
-#          .stApp {{
-#              background: url(data:image/{main_bg_ext};base64,{base64.b64encode(open(main_bg, "rb").read()).decode()});
-#              background-size: cover
-#          }}
-#          </style>
-#          """,
-#         unsafe_allow_html=True
-#     )
-# # 调用
-# main_bg('back.png')
+def main_bg(main_bg):
+    main_bg_ext = "back.png"
+    st.markdown(
+        f"""
+         <style>
+         .stApp {{
+             background: url(data:image/{main_bg_ext};base64,{base64.b64encode(open(main_bg, "rb").read()).decode()});
+             background-size: cover
+         }}
+         </style>
+         """,
+        unsafe_allow_html=True
+    )
+# 调用
+main_bg('back.png')
 
 
 with st.sidebar:
