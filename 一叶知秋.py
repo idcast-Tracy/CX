@@ -73,7 +73,7 @@ if choose == "数据上传":
 
 elif choose == "用户行为数据":
     with st.spinner('超星小助手正在努力加载中......'):
-        time.sleep(0.3)
+        time.sleep(3)
     selecte1 = option_menu(None, ["用户地区分布-条形图", "用户特征分布-饼图", "用户活跃度-折线图"],
                           icons=["bar-chart-fill", "pie-chart-fill", "graph-up"],
                           menu_icon="cast", default_index=0, orientation="horizontal",
