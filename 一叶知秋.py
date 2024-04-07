@@ -83,7 +83,7 @@ elif choose == "用户行为数据":
             bar.progress(i + 1)
             time.sleep(0)
         st.info('饼图以圆形为基础，通过划分不同的扇形区域来展示用户特征的分布情况。这种图表形式使得数据的占比关系非常清晰，便于快速了解各类用户特征的比例，为企业的用户分析和精准营销提供有力支持。')
-        st.image("用户特征分布.png",use_column_width=True)
+        st.image("用户特征分布.png",width=700)
 
     elif selecte1 == "用户活跃度-折线图":
         latest_iteration = st.empty()  ##  显示进度
