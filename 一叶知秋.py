@@ -45,20 +45,20 @@ if choose == "数据上传":
         df = pd.read_csv(uploaded_file,encoding='gbk')
         st.write("文件名:", uploaded_file.name)
         latest_iteration = st.empty() ##  显示进度
-        bar = st.progress(0)
+        bar1 = st.progress(0)
         for i in range(100): # Update the progress bar with each iteration.
             latest_iteration.text(f'加载进度 {i + 1} %')
-            bar.progress(i + 1)
+            bar1.progress(i + 1)
             time.sleep(0)
         st.success('数据导入成功！请检查并核对数据的完整性和真实性。')
         st.dataframe(df)
 
 elif choose == "用户行为数据":
     latest_iteration = st.empty()  ##  显示进度
-    bar = st.progress(0)
+    bar2 = st.progress(0)
     for i in range(0,100):  # Update the progress bar with each iteration.
         latest_iteration.text(f'加载进度 {i + 1} %')
-        bar.progress(i + 1)
+        bar2.progress(i + 1)
         time.sleep(0.01)
     selecte1 = option_menu(None, ["用户分布地区-条形图", "用户特征分布-饼图", "用户活跃度-折线图"],
                           icons=["bar-chart-fill", "pie-chart-fill", "graph-up"],
@@ -84,10 +84,10 @@ elif choose == "用户行为数据":
 
 elif choose == "系统性能评估":
     latest_iteration = st.empty()  ##  显示进度
-    bar = st.progress(0)
+    bar3 = st.progress(0)
     for i in range(0,100):  # Update the progress bar with each iteration.
         latest_iteration.text(f'加载进度 {i + 1} %')
-        bar.progress(i + 1)
+        bar3.progress(i + 1)
         time.sleep(0.01)
     selecte2 = option_menu(None, ["推荐效果评估","问答系统性能评估曲线"],icons=["pie-chart-fill","graph-up"],
                           menu_icon="cast", default_index=0, orientation="horizontal",
@@ -137,10 +137,10 @@ if choose == "数据备份":
 
 if choose == "安全审计":
     latest_iteration = st.empty()  ##  显示进度
-    bar = st.progress(0)
+    bar4 = st.progress(0)
     for i in range(0,100):  # Update the progress bar with each iteration.
         latest_iteration.text(f'加载进度 {i + 1} %')
-        bar.progress(i + 1)
+        bar4.progress(i + 1)
         time.sleep(0.01)
     selecte4 = option_menu(None, ["审计日志表","审计日志详细界面"],icons=["pie-chart-fill","graph-up"],
                           menu_icon="cast", default_index=0, orientation="horizontal",
@@ -160,10 +160,10 @@ if choose == "安全审计":
 
 if choose == "系统监控":
     latest_iteration = st.empty()  ##  显示进度
-    bar = st.progress(0)
+    bar5 = st.progress(0)
     for i in range(0,100):  # Update the progress bar with each iteration.
         latest_iteration.text(f'加载进度 {i + 1} %')
-        bar.progress(i + 1)
+        bar5.progress(i + 1)
         time.sleep(0.01)
     selecte5 = option_menu(None, ["安全监控","服务监控","日志监控","性能监控"],icons=["pie-chart-fill","graph-up"],
                           menu_icon="cast", default_index=0, orientation="horizontal",
@@ -190,10 +190,10 @@ if choose == "系统监控":
 ## ==================================  AI启动项  ==========================================
 if choose == "AI启动项":
     latest_iteration = st.empty()  ##  显示进度
-    bar = st.progress(0)
+    bar6 = st.progress(0)
     for i in range(0,100):  # Update the progress bar with each iteration.
         latest_iteration.text(f'加载进度 {i + 1} %')
-        bar.progress(i + 1)
+        bar6.progress(i + 1)
         time.sleep(0.01)
     selecte6 = option_menu(None, ["创造力","平衡","保守"],icons=["pie-chart-fill","graph-up","cast"],
                           menu_icon="cast", default_index=0, orientation="horizontal",
@@ -214,10 +214,10 @@ if choose == "AI启动项":
 ## ==================================  跨平台同步学习模块  ==========================================
 if choose == "跨平台同步学习模块":
     latest_iteration = st.empty()  ##  显示进度
-    bar = st.progress(0)
+    bar7 = st.progress(0)
     for i in range(0,100):  # Update the progress bar with each iteration.
         latest_iteration.text(f'加载进度 {i + 1} %')
-        bar.progress(i + 1)
+        bar7.progress(i + 1)
         time.sleep(0.01)
     selecte7 = option_menu(None, ["手机端","平板端","电脑端"],icons=["pie-chart-fill","graph-up","cast"],
                           menu_icon="cast", default_index=0, orientation="horizontal",
